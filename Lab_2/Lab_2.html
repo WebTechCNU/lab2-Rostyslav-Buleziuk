@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab_2.css"/>
+    <title>Lab_2</title>
+</head>
+
+<body>
+    <h1>Laboratory 2. Buleziuk Rostyslav</h1>
+<div class="one">
+    <button class="btn" onclick="getFruits()">Фрукти</button>
+    <div id="fruits"></div>
+</div>
+<div class="two">
+    <button class="btn" onclick="getVegetables()">Овочі</button>
+    <div id="vegetables"></div>
+</div>
+<div class="three">
+    <button class="btn" onclick="getSweets()">Солодощі</button>
+    <div id="sweets"></div>
+</div>
+
+
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Оформлення підписки (;</h3>
+          <a href="#close" title="Close" class="close">×</a>
+        </div>
+        <div class="modal-body">    
+          <p>
+            <button class="bt1">Підписатися ♥ </button>
+            <button class="bt2">Не підписуватися</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="window" href="#openModal">За бажанням можете оформити підписку!</a>
+
+
+
+<script src="Lab_2.js"></script>
+    
+</body>
+</html>
