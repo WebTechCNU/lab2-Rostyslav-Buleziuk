@@ -1,5 +1,25 @@
 /* Creating Fruits*/
 
+let isSubscribed = "user is subscribed";
+
+window.onload = setTimeout( function(){
+    if (!(document.cookie === isSubscribed)) {
+        let modal = document.querySelector("#openModal");
+        modal.style.opacity = 1;
+        modal.style.pointerEvents = "auto";
+    }
+}, 3000);
+
+function closeModal(){
+    let modal = document.querySelector("#openModal");
+    modal.style.display = "none";
+}
+
+function subscribe(){
+    document.cookie = isSubscribed;
+    closeModal();
+}
+
 let fruits = [
     {
         name: "banana",
@@ -103,3 +123,4 @@ function getSweets(){
     }
     divInfo.innerHTML = inner;
 }
+
